@@ -14,10 +14,9 @@ body {
 }
 
 header {
-  margin-bottom: 25px;
   border-bottom: 1px solid #f1f1f1;
   height: 80px;
-  padding: 20px 40px;
+  padding: 20px 60px 20px 40px;
 }
 .logo {
   img {
@@ -28,7 +27,7 @@ header {
 .sidebar {
   width: 0;
   transform: translateX(-300px);
-  padding: 25px 30px;
+  padding: 5px 30px;
   border-right: 1px solid #e6e7eb;
   display: flex;
   height: 100vh;
@@ -90,11 +89,11 @@ span.icon {
 /* Main content */
 .main-content {
   flex: 1;
-  padding: 25px 30px;
+
 }
 
 .main-content section {
-  padding: 20px 0;
+  padding: 30px 60px;
   border-radius: 8px;
 }
 
