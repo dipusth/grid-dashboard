@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #62636c;
+  background-color: white;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Fustat", sans-serif;
+  letter-spacing: -0.1px;
+  font-weight: 500;
+}
+
+header {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #f1f1f1;
+  height: 80px;
+  padding: 20px 40px;
+}
+.logo {
+  img {
+    max-width: 165px;
+  }
+}
+/* Sidebar */
+.sidebar {
+  width: 0;
+  transform: translateX(-300px);
+  padding: 25px 30px;
+  border-right: 1px solid #e6e7eb;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s linear;
+  @media (min-width: 768px) {
+    width: 300px;
+    transform: translateX(0);
+  }
+}
+.sidebar.toggle-sidebar {
+  display: none;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+.selected {
+  background: #e9e9e9;
+  border-radius: 25px;
+  padding: 10px 15px;
+  color: #8C58C8 !important;
+  font-weight: bold;
+}
+
+.sidebar ul li a {
+  color: #3a3b40;
+  text-decoration: none;
+  transition: color 0.2s;
+  border-radius: 25px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  .icon svg {
+    height: 25px;
+    margin-right: 8px;
+    width: auto;
+    fill: #3a3b40;
+  }
+}
+span.icon {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.sidebar ul li a:hover {
+  background: #e9e9e9;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 25px 30px;
+}
+
+.main-content section {
+  padding: 20px 0;
+  border-radius: 8px;
+}
+
+/* notificatio */
+.notification:after {
+  content: "";
+  color: red;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: red;
+  border-radius: 25px;
+  vertical-align: top;
+  position: relative;
+  top: -6px;
+}
+
+/* cards */
+.card {
+  background-color: #fff;
+  border: 1px solid #e6e7eb;
+  padding: 20px;
+  width: 100%;
+  border-radius: 8px;
+}
+.card-form {
+  background-color: #fff;
+}
+
+.flex > .card-block,
+.flex-md > .card-block {
+  flex-grow: 1;
+  .card {
+    margin-bottom: 25px;
+  }
+}
+/* user profile */
+.user-profile {
+  h6 {
+    margin-bottom: 5px;
+  }
+}
+.social-media h4 {
+  margin-bottom: 5px;
+}
+/* welcome section */
+.welcome {
+  h1 {
+    margin-bottom: 2px;
+  }
+  span {
+    color: #7E7E7E;
+    margin-left: 7px;
+  }
+}
